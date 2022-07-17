@@ -82,4 +82,8 @@ input[type="file"] {
     margin-bottom: 10vh;
 }
 
-
+#add:hover {
+  border: 2px solid white;
+  background-color: gold;
+  color: black;
+}

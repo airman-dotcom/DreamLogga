@@ -4,7 +4,8 @@ const http = require('http');
 const server = http.createServer(app);
 const fileupload = require('express-fileupload')
 const mongoose = require("mongoose");
-let MONGO_URI = "mongodb+srv://amathakbari:24l63AQs7kQ8D3hX@my-db.m8xjh.mongodb.net/DreamLogger?retryWrites=true&w=majority";
+
+const MONGO_URI = process.env['mongo_uri'];
 mongoose.connect(MONGO_URI);
 let db = mongoose.connection
 const validator = require("email-validator");
@@ -37,8 +38,8 @@ app.get("*", (req, res) => {
     
 })
 
-server.listen(3000,'localhost', () => {
-    console.log('Server running at http://localhost:3000')
+server.listen(3000, () => {
+    console.log('Server running on port 3000')
 })
 mongoose.connection.on("connected", (err) => {
     if (err) {
