@@ -1,0 +1,24 @@
+.d-flex {
+    width: 30vw;
+    margin-left: 35vw;
+    margin-top: 10vh;
+}
+
+#keywords {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+div > #keywords {
+    margin-left: 2vw;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+html, body {
+    background: url("/assets/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}

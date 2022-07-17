@@ -1,0 +1,85 @@
+#hours {
+    width: 20vw;
+    flex: none;
+}
+:root {
+    --bs-bod-font-size: 1.1rem;
+}
+
+.mb-3 {
+    width: 20vw;
+}
+
+#img {
+    margin-top: 2vh;
+}
+
+.d-flex {
+    width: 30vw;
+    margin-left: 35vw;
+    margin-top: 10vh;
+}
+
+#keywords {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+div > #keywords {
+    margin-left: 2vw;
+}
+
+
+#tags{ 
+    min-width: 2vw;
+    text-align: center;
+    justify-content: center;
+    min-height: 2vw;
+    display: flex;
+    border: 5px gold solid;
+}
+
+
+html, body {
+    background: url("/assets/bg3.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.input-group {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tag_btn:hover {
+    background-color: gold;
+    color: white;
+}
+
+input[type="file"] {
+    color: gold;
+    margin:auto;
+    height: 4vh;
+    width: 15vw;
+}
+
+* > .navbar {
+    color: white;
+}
+
+#add {
+    margin-top: 5vh;
+    background-color: transparent;
+    outline: 2px solid black;
+    border: 2px solid gold;
+    border-radius: 25px;
+    width: 15vw;
+    height: 8vh;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10vh;
+}
+
+

@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+}
+
+#login {
+    float: left;
+    border: 8px solid gold;
+    border-radius: 25px;
+}
+
+#email, #uname, #psw, #psw2 {
+    margin-bottom: 2vh;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2vh;
+}
+
+#register, #login {
+    padding: 4vw;
+    padding-top: 2vw;
+}
+
+#err1, #err2 {
+    color: black;
+}
+
+#register {
+    border: 8px solid gold;
+    border-radius: 25px;
+    float: right;
+    margin-left: 20vw;
+}
+
+
+html, body {
+    background: url("/assets/bg2.png") no-repeat center center fixed;
+    background-size: cover;
+}

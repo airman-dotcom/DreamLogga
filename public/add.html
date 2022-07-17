@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/add.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Add A Dream</title>
+</head>
+
+<body>
+    <nav class="navbar" style="background-color:gold;">
+        <div class="container-fluid">
+          <a id="name" class="navbar-brand" href="#">
+            <img src="/assets/icon.png" alt="Icon" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+          </a>
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/main">Main Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/add">Add Dream</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/my_dreams">My Dreams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div style="border: 5px solid black; border-radius: 10px; width: 45vw;" class="input-group">
+        <span style="background-color: #af67cb;" class="input-group-text">Dream Name (Summary)</span>
+        <textarea  style="background-color: gold;" id="title" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div  style="border: 5px solid black; border-radius: 10px; width: 45vw; height: 50vh;"  class="input-group" id="content">
+        <span style="background-color: #af67cb;" class="input-group-text">Dream</span>
+        <textarea id="body" style="max-height: 50vh; background-color: gold;" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div style="width: 29.2vw; border: 5px solid black; border-radius: 10px;" class="input-group mb-3">
+        <span style="background-color: #af67cb;" class="input-group-text" id="basic-addon1">Hours of sleep.</span>
+        <input style="background-color: gold;" max="360" id="hours" min="0" type="number" class="form-control" placeholder="Hours of Sleep"
+            aria-label="Hours" aria-describedby="basic-addon1">
+    </div>
+    <div style="width: 45vw; height: 20vh; border: 5px solid black; border-radius: 10px;" class="input-group">
+        <span style="background-color: #af67cb;" class="input-group-text">Food Ate last night</span>
+        <textarea id="food" style="background-color: gold; max-height: 30vh;" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div class="d-flex">
+        <input maxlength="10" id="tag" class="form-control me-2" type="search" placeholder="Enter Tag" aria-label="Search">
+        <button style="color: gold; border-color: gold;" id="tag_btn" class="btn btn-outline-success" type="button">Add Tag</button>
+    </div>
+    
+    <div style="color: gold;" id="tags">
+        <h1>Tags:</h1>
+    </div>
+    <p style="font-size: 30px; margin-left: 31.75vw; width: 36.5vw; height: 0vh; color: gold;">Choose Image Thumbnail</p>
+    <div style="width: 15vw; height: 10vh;" class="input-group">
+        <input  id="img" type="file">
+        <button id="add" onclick="addDream()">Add Dream</button>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="scripts/add.js"></script>
+
+</html>
